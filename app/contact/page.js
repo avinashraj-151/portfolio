@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "Contact",
+    description:
+        "Contact Avinash Raj for software development roles, freelance web app projects, React, Next.js, Node.js, and full-stack development work.",
+    alternates: {
+        canonical: "/contact",
+    },
+}
+
 import CodingProfilesSection from "../components/CodingProfilesSection"
 
 const contactLinks = [

@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "Resume",
+    description:
+        "Download Avinash Raj's resume and view coding profiles across LeetCode, CodeChef, GeeksforGeeks, HackerRank, and GitHub.",
+    alternates: {
+        canonical: "/resume",
+    },
+}
+
 import CodingProfilesSection from "../components/CodingProfilesSection"
 
 export default function Resume() {

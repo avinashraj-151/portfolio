@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "Services",
+    description:
+        "Web app development, frontend development, backend APIs, database integration, realtime features, and performance improvements by Avinash Raj.",
+    alternates: {
+        canonical: "/services",
+    },
+}
+
 const services = [
     {
         title: "Web App Development",

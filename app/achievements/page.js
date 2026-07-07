@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "Achievements",
+    description:
+        "Avinash Raj's achievements include GATE 2025 qualification, 600+ DSA problems solved, CodeChef 3-star rating, and strong coding profiles.",
+    alternates: {
+        canonical: "/achievements",
+    },
+}
+
 import { codingProfiles } from "../data/codingProfiles"
 
 const profileByLabel = Object.fromEntries(

@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "Experience",
+    description:
+        "Avinash Raj's software development experience with React, Next.js, Tailwind CSS, Node.js, Express, PostgreSQL, and MongoDB.",
+    alternates: {
+        canonical: "/experience",
+    },
+}
+
 const experiences = [
     {
         period: "06/2025 – 06/2026",

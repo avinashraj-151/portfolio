@@ -1,5 +1,11 @@
 import Image from "next/image"
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+}
+
 export default function Home() {
   return (
     <section
@@ -10,7 +16,7 @@ export default function Home() {
         <div className="home-hero__portrait-frame h-full w-full sm:contents">
           <Image
             src="/myimage.png"
-            alt="Avinash Raj"
+            alt="Avinash Raj, software developer"
             width={1062}
             height={877}
             priority

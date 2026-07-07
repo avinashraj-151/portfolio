@@ -1,3 +1,12 @@
+export const metadata = {
+    title: "About",
+    description:
+        "Learn about Avinash Raj, a software developer from Bihar with a Computer Science degree, GATE qualification, and experience building web applications.",
+    alternates: {
+        canonical: "/about",
+    },
+}
+
 import CodingProfilesSection from "../components/CodingProfilesSection"
 
 const contactLinks = [

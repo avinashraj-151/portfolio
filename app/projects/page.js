@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "Projects",
+  description:
+    "Explore Avinash Raj's web development projects, including RealCalculators, GitHub Finder, TestSeries, and NextMatch.",
+  alternates: {
+    canonical: "/projects",
+  },
+}
+
 import Image from "next/image"
 
 const projects = [
