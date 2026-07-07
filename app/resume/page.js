@@ -4,13 +4,13 @@ export default function Resume() {
     return (
         <section
             aria-label="Resume"
-            className="flex flex-1 flex-col items-center px-6 pb-28 pt-16 sm:px-10 sm:pt-20"
+            className="resume-page flex flex-1 flex-col items-center px-6 pb-28 pt-16 max-sm:px-4 max-sm:pb-[calc(6.75rem+env(safe-area-inset-bottom,0px))] max-sm:pt-14 sm:px-10 sm:pt-20"
         >
-            <h1 className="text-center font-serif text-[clamp(3rem,12vw,6rem)] font-bold leading-none tracking-[-0.03em] text-neutral-950">
+            <h1 className="text-center font-serif text-[clamp(3rem,12vw,6rem)] font-bold leading-none tracking-[-0.03em] text-neutral-950 max-sm:text-[clamp(2.75rem,14vw,3.5rem)]">
                 Resume
             </h1>
 
-            <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-7 text-neutral-700 sm:mt-10 sm:text-base sm:leading-8">
+            <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-7 text-neutral-700 max-sm:mt-6 max-sm:max-w-md max-sm:px-1 max-sm:leading-7 sm:mt-10 sm:text-base sm:leading-8">
                 My latest CV — view below or download a copy.
             </p>
 
@@ -25,13 +25,13 @@ export default function Resume() {
             <a
                 href="/avinashrajcv.pdf"
                 download="avinashrajcv.pdf"
-                className="mt-8 rounded-full border border-neutral-950/15 bg-white/60 px-6 py-2.5 text-sm font-semibold text-neutral-950 transition-colors hover:bg-white sm:mt-10"
+                className="mt-8 rounded-full border border-neutral-950/15 bg-white/60 px-6 py-2.5 text-sm font-semibold text-neutral-950 transition-colors hover:bg-white max-sm:mt-6 max-sm:w-full max-sm:max-w-xs max-sm:py-3 sm:mt-10"
             >
                 Download PDF
             </a>
 
-            <div className="mt-14 w-full max-w-5xl sm:mt-16 lg:max-w-6xl">
-                <CodingProfilesSection className="border-t border-neutral-950/10 pt-14 sm:pt-16" />
+            <div className="mt-14 w-full max-w-5xl max-sm:mt-10 sm:mt-16 lg:max-w-6xl">
+                <CodingProfilesSection className="border-t border-neutral-950/10 pt-14 max-sm:gap-5 max-sm:pt-10 sm:pt-16" />
             </div>
         </section>
     )

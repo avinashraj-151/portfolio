@@ -3,11 +3,11 @@ import GlassNavDock from "./GlassNavDock"
 
 export default function SiteShell({ children }) {
   return (
-    <div className="relative flex h-dvh flex-col overflow-hidden bg-neutral-50">
+    <div className="site-shell relative flex h-dvh flex-col overflow-hidden bg-neutral-50">
       <div aria-hidden="true" className="watermark-bg" />
 
-      <header className="relative z-30 shrink-0 bg-transparent px-6 py-4 text-center sm:px-10">
-        <p className="text-sm leading-6 text-neutral-600 sm:text-base">
+      <header className="site-header relative z-30 shrink-0 bg-transparent px-6 text-center sm:px-10 sm:py-4">
+        <p className="mx-auto max-w-md text-sm leading-6 text-neutral-600 sm:max-w-none sm:text-base">
           <span className="group inline-flex items-center font-medium text-neutral-950">
             <Link href="/">
               <span className="cursor-pointer transition-transform duration-300 ease-in-out group-hover:-translate-x-2">

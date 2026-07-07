@@ -56,9 +56,9 @@ export default function GlassNavDock() {
   return (
     <nav
       aria-label="Primary"
-      className="fixed bottom-6 left-1/2 z-40 -translate-x-1/2 sm:bottom-8"
+      className="fixed bottom-6 left-1/2 z-40 -translate-x-1/2 max-sm:bottom-[calc(1.5rem+env(safe-area-inset-bottom,0px))] sm:bottom-8"
     >
-      <div className="glass-dock flex items-center gap-3 rounded-4xl py-2 pl-2 pr-3 sm:gap-4 sm:py-2.5 sm:pl-2.5 sm:pr-4">
+      <div className="glass-dock mx-auto flex w-fit max-w-full items-center gap-3 rounded-4xl py-2 pl-2 pr-3 max-sm:gap-2.5 max-sm:pr-2.5 sm:gap-4 sm:py-2.5 sm:pl-2.5 sm:pr-4">
         <div className="glass-dock__avatar relative h-11 w-11 shrink-0 overflow-hidden rounded-full sm:h-12 sm:w-12">
           <Image
             src="/myimage.png"

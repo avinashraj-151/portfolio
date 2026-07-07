@@ -64,7 +64,7 @@ export default function Contact() {
                     </ul>
                 </div>
 
-                <CodingProfilesSection className="mt-14 border-t border-neutral-950/10 pt-14 sm:mt-16 sm:pt-16" />
+                {/* <CodingProfilesSection className="mt-14 border-t border-neutral-950/10 pt-14 sm:mt-16 sm:pt-16" /> */}
             </div>
         </section>
     )
