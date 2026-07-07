@@ -63,7 +63,7 @@ export default function Projects() {
                   className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center gap-3 bg-neutral-950/45 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 sm:gap-4">
+                <div className="absolute inset-0 hidden items-center justify-center gap-3 bg-neutral-950/45 opacity-0 backdrop-blur-[2px] transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 sm:flex sm:gap-4">
                   <a
                     href={project.website}
                     target="_blank"
@@ -92,6 +92,27 @@ export default function Projects() {
                 <p className="mt-1.5 text-sm leading-6 text-neutral-600">
                   {project.description}
                 </p>
+
+                <div className="mt-4 flex flex-wrap gap-2.5 sm:hidden">
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-neutral-950/15 bg-white/70 px-4 py-2 text-sm font-semibold text-neutral-950 transition-colors active:bg-white"
+                  >
+                    Website
+                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-neutral-950/15 bg-neutral-950 px-4 py-2 text-sm font-semibold text-white transition-colors active:bg-neutral-800"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           </li>
