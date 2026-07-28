@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Projects",
   description:
-    "Explore Avinash Raj's web development projects, including RealCalculators, GitHub Finder, TestSeries, and NextMatch.",
+    "Explore Avinash Raj's web development projects, including GateExam AI Coach, RealCalculators, GitHub Finder, TestSeries, and NextMatch.",
   alternates: {
     canonical: "/projects",
   },
@@ -10,6 +10,14 @@ export const metadata = {
 import Image from "next/image"
 
 const projects = [
+  {
+    title: "GateExam — AI Prep Coach",
+    description:
+      "A structured prep hub & AI coach for GATE CSE aspirants featuring syllabus tracking, weak-topic detection, and PYQ mock exams.",
+    image: "/project5.png",
+    website: "https://gateexam.org",
+    github: null,
+  },
   {
     title: "RealCalculators",
     description: "Smart calculator platform with instant scientific and financial tools.",
