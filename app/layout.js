@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import SiteShell from "./components/SiteShell";
+import AuthProvider from "./components/AuthProvider";
+import { auth } from "@/auth";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -137,7 +139,9 @@ const personJsonLd = {
   ],
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const session = await auth();
+
   return (
     <html
       lang="en"
@@ -148,7 +152,9 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
-        <SiteShell>{children}</SiteShell>
+        <AuthProvider session={session}>
+          <SiteShell>{children}</SiteShell>
+        </AuthProvider>
       </body>
     </html>
   );

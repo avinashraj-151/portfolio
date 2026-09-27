@@ -326,7 +326,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <a
               key={project.title}
               href={project.href}
@@ -343,11 +343,12 @@ export default function Services() {
               <p className="text-xs text-neutral-500 leading-relaxed line-clamp-2 mb-3">
                 {project.description}
               </p>
-              <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-neutral-100">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-neutral-100/70">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
+                  priority={index < 3}
                   sizes="(max-width: 640px) 100vw, 33vw"
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                 />

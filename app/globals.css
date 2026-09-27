@@ -135,7 +135,7 @@ body {
 .glass-navbar {
   position: relative;
   isolation: isolate;
-  overflow: hidden;
+  border-radius: 9999px;
   border: 1px solid rgba(255, 255, 255, 0.95);
   background: #ffffff;
   box-shadow:

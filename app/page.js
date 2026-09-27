@@ -236,7 +236,7 @@ export default function Home() {
         className="no-scrollbar mt-8 min-h-0 min-w-0 flex-1 lg:mt-0 lg:h-full lg:overflow-y-auto lg:overscroll-contain"
       >
         <div className="grid grid-cols-1 gap-5 pb-24 sm:pb-4 sm:grid-cols-2 sm:gap-6 lg:pt-28 lg:pr-2 lg:pb-5">
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             const Icon = project.icon
             return (
               <a
@@ -262,11 +262,12 @@ export default function Home() {
                   {project.description}
                 </p>
 
-                <div className="relative mt-3 aspect-[16/10] overflow-hidden rounded-xl bg-neutral-100">
+                <div className="relative mt-3 aspect-[16/10] overflow-hidden rounded-xl bg-neutral-100/70">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
+                    priority={index < 4}
                     sizes="(max-width: 640px) 100vw, 40vw"
                     className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                   />
