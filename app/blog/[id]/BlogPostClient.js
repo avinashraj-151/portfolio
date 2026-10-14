@@ -960,7 +960,7 @@ export default function BlogPostClient({
                       <div
                         key={block.id}
                         dangerouslySetInnerHTML={{ __html: block.content }}
-                        className="prose prose-neutral max-w-none text-[17px] sm:text-[18px] leading-[1.8] text-neutral-800 font-normal font-sans prose-headings:font-sans prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-neutral-950 prose-headings:mt-8 prose-headings:mb-3 prose-p:my-4 prose-ul:my-4 prose-li:my-1"
+                        className="blog-body max-w-none text-[17px] leading-[1.8] text-neutral-800 sm:text-[18px] [&_h2]:mt-8 [&_h2]:mb-3 [&_h2]:font-sans [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:tracking-tight [&_h2]:text-neutral-950 sm:[&_h2]:text-3xl [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:font-sans [&_h3]:text-xl [&_h3]:font-bold [&_h3]:tracking-tight [&_h3]:text-neutral-950 sm:[&_h3]:text-2xl [&_p]:my-4 [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:my-4 [&_ol]:list-decimal [&_ol]:pl-6 [&_li]:my-1 [&_blockquote]:my-4 [&_blockquote]:border-l-4 [&_blockquote]:border-neutral-950 [&_blockquote]:pl-4 [&_blockquote]:italic [&_a]:text-emerald-700 [&_a]:underline [&_a]:underline-offset-2 [&_code]:rounded [&_code]:bg-neutral-100 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-[0.9em] [&_code]:text-neutral-800 [&_b]:font-bold [&_strong]:font-bold [&_i]:italic [&_em]:italic"
                       />
                     )
                   }
